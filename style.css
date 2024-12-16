@@ -1,0 +1,152 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', Arial, sans-serif;
+    background-color: #00154E; /* Темно-синий фон */
+    color: #333;
+}
+
+/* Контейнер письма */
+.reset-passwds {
+    background-color: #F0F0F0;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Логотип */
+.logo img {
+    max-width: 180px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Текст приветствия */
+.greeting {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Основные инструкции */
+.instruction {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Дополнительная информация */
+.info {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.4;
+}
+
+/* Логотип в футере */
+.footer-logo {
+    margin-top: 20px;
+    text-align: center;
+}
+.button-container {
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(to right, #A5A5A5, #E0E0E0, #A5A5A5);
+    border: 1px solid #FF6A00;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background: linear-gradient(to right, #E0E0E0, #FFFFFF, #E0E0E0);
+    color: #FF6A00;
+    border-color: #A5A5A5;
+}
+/* Основное изображение для десктопа */
+.footer-logo img.desktop-logo {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Изображение для планшетов и мобильных устройств (будет скрыто на десктопе) */
+.footer-logo img.mobile-logo {
+    display: none;
+}
+
+/* Картинка для страницы welcome-page на мобильных */
+.welcome-page .footer-logo img.mobile-logo {
+    display: none; /* Скрываем изображение для мобильных на странице welcome */
+}
+
+/* Картинка для страницы moderation-page на мобильных */
+.moderation-page .footer-logo img.mobile-logo {
+    display: none; /* Скрываем изображение для мобильных на странице moderation */
+}
+
+/* Адаптивный дизайн для планшетов и мобильных */
+@media screen and (max-width: 480px) {
+    .reset-passwds {
+        max-width: 80%;
+        min-height: 600px;
+        padding: 10px;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .info {
+        font-size: 14px;
+        line-height: 2;
+        margin-top: 50px;
+    }
+
+    /* Отображаем картинку для мобильных устройств */
+    .welcome-page .footer-logo img.mobile-logo {
+        display: block;
+        content: url('ridelogotel.png');
+        max-width: 100px;
+        margin: 0 auto;
+    }
+
+    .moderation-page .footer-logo img.mobile-logo {
+        display: block;
+        content: url('boxtel.png'); /* Путь к изображению для moderation-page */
+        max-width: 100px;
+        margin: 0 auto;
+    }
+
+    /* Скрываем картинку для десктопа на мобильных устройствах */
+    .footer-logo img.desktop-logo {
+        display: none;
+    }
+}
+
+/* Адаптивный дизайн для ПК и планшетов */
+@media screen and (min-width: 481px) {
+    /* Скрываем картинку для мобильных устройств */
+    .footer-logo img.mobile-logo {
+        display: none;
+    }
+
+    /* Отображаем картинку для десктопа */
+    .footer-logo img.desktop-logo {
+        display: block;
+        text-align: center;
+        margin: 0 auto; /* Центрируем картинку */
+    }
+}

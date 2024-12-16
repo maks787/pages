@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="moderation-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderation Email</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="language_switcher.js" defer></script>
+</head>
+<body>
+<div class="language-selector">
+    <select id="language-switch">
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+        <option value="et">Eesti</option>
+    </select>
+</div>
+
+<!-- Контейнер письма -->
+<div class="reset-passwds">
+    <!-- Логотип -->
+    <div class="logo">
+        <img src="motorlogo.png" alt="MotorRent.ee Logo">
+    </div>
+
+    <!-- Текст приветствия -->
+    <p class="greeting" data-lang-en="Hello," data-lang-ru="Здравствуйте," data-lang-et="Tere,">
+        Здравствуйте,
+    </p>
+
+    <!-- Основные инструкции -->
+    <p class="instruction" data-lang-en="You have created a new ad on motorrent.ee"
+       data-lang-ru="Вы создали новое объявление на сайте motorrent.ee"
+       data-lang-et="Olete veebilehel motorrent.ee loonud uue kuulutuse">
+    </p>
+
+    <!-- Логотип в футере -->
+    <div class="footer-logo">
+        <img src="boxpc.png" alt="MotorRent.ee Logo" class="desktop-logo">
+        <img src="boxtel.png" alt="MotorRent.ee Logo" class="mobile-logo">
+    </div>
+</div>
+
+</body>
+</html>

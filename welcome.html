@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="welcome-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Email</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="language_switcher.js" defer></script>
+</head>
+<body>
+<div class="language-selector">
+    <select id="language-switch">
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+        <option value="et">Eesti</option>
+    </select>
+</div>
+
+<!-- Контейнер письма -->
+<div class="reset-passwds">
+    <!-- Логотип -->
+    <div class="logo">
+        <img src="motorlogo.png" alt="MotorRent.ee Logo">
+    </div>
+
+    <!-- Текст приветствия -->
+    <p class="greeting" data-lang-en="Hello," data-lang-ru="Здравствуйте," data-lang-et="Tere,">
+        Здравствуйте,
+    </p>
+
+    <!-- Основные инструкции -->
+    <p class="instruction" data-lang-en="You are registered on the MottorRent website. Please follow this link to confirm your account."
+       data-lang-ru="Вы зарегистрированы на сайте MottorRent. Пожалуйста, перейдите по этой ссылке, чтобы подтвердить свою учетную запись."
+       data-lang-et="Olete registreerunud veebilehel MottorRent. Teie konto kinnitamiseks palun järgige seda linki.">
+    </p>
+
+    <!-- Дополнительная информация -->
+    <p class="info" data-lang-en="If you didn't register, please ignore this email."
+       data-lang-ru="Если вы не регистрировались, проигнорируйте это письмо."
+       data-lang-et="Kui te ei registreerinud, siis ignoreerige seda e-kirja.">
+    </p>
+
+    <!-- Логотип в футере -->
+    <div class="footer-logo">
+        <img src="ridelogopc.png" alt="MotorRent.ee Logo" class="desktop-logo">
+        <img src="ridelogotel.png" alt="MotorRent.ee Logo" class="mobile-logo">
+    </div>
+</div>
+
+</body>
+</html>

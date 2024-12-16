@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorRent.ee - Restore Password</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="language_switcher.js"></script>
+</head>
+<body>
+<div class="language-selector">
+    <select id="language-switch">
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+
+        <option value="et">Eesti</option>
+    </select>
+</div>
+
+<div class="reset-passwds">
+    <!-- Логотип -->
+    <div class="logo">
+        <img src="motorlogo.png" alt="MotorRent.ee Logo">
+    </div>
+
+
+
+
+    <!-- Контент письма -->
+    <div class="content">
+        <p class="greeting" data-lang-en="Dear {user name} ({email})!" data-lang-ru="Уважаемый {user name} ({email})!" data-lang-et="Lugupeetud {user name} ({email})!"></p>
+        <p class="instruction" data-lang-en="This email was sent in response to your request to reset your password. Please click the link below."
+           data-lang-ru="Это письмо было отправлено в ответ на ваш запрос о сбросе пароля. Пожалуйста, нажмите на ссылку ниже."
+           data-lang-et="See e-kiri saadeti vastuseks teie taotlusele lähtestada oma parool. Palun klõpsake alloleval lingil."></p>
+
+
+        <div class="button-container">
+            <a href="#" class="button" data-lang-en="CHANGE PASSWORD" data-lang-ru="СМЕНИТЬ ПАРОЛЬ" data-lang-et="MUUDA PAROOLI"></a>
+        </div>
+
+        <!-- Дополнительная информация -->
+        <p class="info" data-lang-en="For security reasons, this link is only valid until <b>2024-12-16 04:15</b>. If you do not click the link before then, you will need to repeat the password reset steps."
+           data-lang-ru="По соображениям безопасности, эта ссылка будет активна только до <b>2024-12-16 04:15</b>. Если вы не кликнете по ссылке до этого времени, вам нужно будет повторить процесс сброса пароля."
+           data-lang-et="Turvalisuse kaalutlustel on see link aktiivne ainult kuni <b>2024-12-16 04:15</b>. Kui te ei klõpsa linki enne seda aega, peate parooli lähtestamise samme kordama."></p>
+    </div>
+</div>
+</body>
+</html>
