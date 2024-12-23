@@ -57,23 +57,9 @@ body {
     margin: 20px 0;
 }
 
-.button {
-    display: inline-block;
-    text-decoration: none;
-    color: #FFF;
-    font-size: 14px;
-    font-weight: bold;
-    background: linear-gradient(to right, #A5A5A5, #E0E0E0, #A5A5A5);
-    border: 1px solid #FF6A00;
-    border-radius: 5px;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.button:hover {
-    background: linear-gradient(to right, #E0E0E0, #FFFFFF, #E0E0E0);
-    color: #FF6A00;
-    border-color: #A5A5A5;
+.button-img {
+    max-width: 160px; /* Размер картинки */
+    margin-right: 10px; /* Отступ между картинкой и текстом */
 }
 /* Основное изображение для десктопа */
 .footer-logo img.desktop-logo {
